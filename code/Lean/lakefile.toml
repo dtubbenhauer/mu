@@ -1,0 +1,6 @@
+name = "web_mu"
+version = "0.1.0"
+defaultTargets = ["WebMu"]
+
+[[lean_lib]]
+name = "WebMu"
