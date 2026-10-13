@@ -49,7 +49,7 @@ The three main declarations in [FaithfulEndpoint.lean](code/Lean/WebMu/Revised/F
 
 ## Notes for the paper
 
-The proof treats every block count by induction. Its representation-theoretic inputs are explicit theorem parameters; see [ASSUMPTIONS.md](code/Lean/ASSUMPTIONS.md). Large finite checks use `native_decide`, which trusts Lean's native compiler and runtime as well as its kernel.
+The proof treats every block count by induction. Its representation theoretic inputs are explicit theorem parameters; see [ASSUMPTIONS.md](code/Lean/ASSUMPTIONS.md). Large finite checks use `native_decide`, which trusts Lean's native compiler and runtime as well as its kernel.
 
 ## Erratum
 
