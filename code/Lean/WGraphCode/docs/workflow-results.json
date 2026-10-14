@@ -1,0 +1,31 @@
+{
+  "completion_reuse_passed": true,
+  "range_graphs_matched": 17,
+  "small_solver_variants": [
+    "compare",
+    "block-relaxed"
+  ],
+  "special_edge_variants": [
+    "default",
+    "symmetry",
+    "restriction",
+    "restriction-symmetry"
+  ],
+  "special_graph_summary": {
+    "canonical_sha256": "cf66ea9c2e703ee2473509959f5c7c177324a2d38d45a45f1d94c155eff23e21",
+    "edges": 2076837,
+    "n": 16,
+    "shape": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "special_edges": 16,
+    "vertices": 171600,
+    "weight_counts": {
+      "1": 2076821,
+      "5": 16
+    }
+  }
+}
