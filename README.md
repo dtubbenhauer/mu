@@ -1,6 +1,6 @@
 # Code and Erratum for *Exponentially large mu-coefficients*
 
-This repository contains the Lean verification accompanying the paper
+This repository contains the Lean verification and W-graph computation programs accompanying the paper
 
 *Exponentially large mu-coefficients*
 
@@ -18,7 +18,7 @@ Same goes for any errors related to this page.
 
 ## Shoutout
 
-The verification uses [Lean](https://lean-lang.org/) and its standard library.
+The verification uses [Lean](https://lean-lang.org/) and its standard library. The W-graph programs are by Tom Goertzen and Keeley Hoek, based on Van Minh Nguyen's algorithm; see the [program README](code/WGraphCode/README.md).
 
 ## What is in this repository?
 
@@ -27,6 +27,7 @@ code/Lean/WebMu/                  proof modules and their dependencies
 code/Lean/AuditIndependentMain.lean  main theorem dependency audit
 code/Lean/ASSUMPTIONS.md           mathematical inputs and computational trust
 code/Lean/verify_lean.sh           build and audit command
+code/WGraphCode/                  W-graph generator in C and Rust
 ```
 
 The literal tensor and diagram data needed for verification are included in the Lean sources.
@@ -46,6 +47,21 @@ The three main declarations in [FaithfulEndpoint.lean](code/Lean/WebMu/Revised/F
 - `WebMu.Revised.paper_main_faithful`
 - `WebMu.Revised.paper_canonicality_faithful`
 - `WebMu.Revised.paper_unbounded_faithful`
+
+## Reproducing the W-graph computations
+
+The generator computes weighted type A W-graphs from a partition. Its vertices are standard Young tableaux, and its positive edge weights are mu-coefficients in the corresponding cell.
+
+With a C11 compiler, Make and OpenMP installed, run from the repository root:
+
+```sh
+cd code/WGraphCode
+make c
+./c/wgraphgen --partition 3_2_1 --threads 1 --dir data/c
+python3 tools/graph_info.py data/c/S_6/3_2_1.bin
+```
+
+The Rust implementation, larger examples, options and tests are documented in [code/WGraphCode/README.md](code/WGraphCode/README.md). Graph inspection needs only Python 3.10 or newer. The W-graph programs run independently of the Lean project.
 
 ## Notes for the paper
 
