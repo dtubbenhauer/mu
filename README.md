@@ -63,9 +63,24 @@ python3 tools/graph_info.py data/c/S_6/3_2_1.bin
 
 The Rust implementation, larger examples, options and tests are documented in [code/WGraphCode/README.md](code/WGraphCode/README.md). Graph inspection needs only Python 3.10 or newer. The W-graph programs run independently of the Lean project.
 
-## Notes for the paper
+## Relation to the paper
 
-The proof treats every block count by induction. Its representation theoretic inputs are explicit theorem parameters; see [ASSUMPTIONS.md](code/Lean/ASSUMPTIONS.md). Large finite checks use `native_decide`, which trusts Lean's native compiler and runtime as well as its kernel.
+The W-graph programs were used to find examples and guide the construction of the family. The Lean project verifies the local calculations and the induction used in the proof of exponential growth.
+
+Its representation theoretic inputs are explicit theorem parameters; see [ASSUMPTIONS.md](code/Lean/ASSUMPTIONS.md). Large finite checks use `native_decide`, which trusts Lean's native compiler and runtime as well as its kernel.
+
+For the proof verification, follow the [Lean instructions](#reproducing-the-verification). For finite W-graph computations, start with the [program README](code/WGraphCode/README.md).
+
+The suggested citation is:
+
+```bibtex
+@misc{GoLaTuVa-mu-code,
+  author = {Goertzen, Tom and Lacabanne, Abel and Tubbenhauer, Daniel and Vaz, Pedro},
+  title = {Code and more for the paper {Exponentially large mu-coefficients}},
+  year = {2026},
+  url = {https://github.com/dtubbenhauer/mu}
+}
+```
 
 ## Erratum
 
