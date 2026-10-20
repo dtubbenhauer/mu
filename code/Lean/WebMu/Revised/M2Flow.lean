@@ -1,5 +1,4 @@
 import WebMu.Spider
-import WebMu.Revised.Family
 
 /-! Exact boundary contraction of certified growth strings using the same local
 Spider.localTerms tables as the corrected-family proof. States are A=0,B=1,C=2.
@@ -57,7 +56,9 @@ def validGrowth (word : Word) (steps : List Step) : Bool :=
 structure Entry where
   word : Word
   steps : List Step
+  /-- Coordinate at a_2, as pairs (power of v, integer coefficient). Here t = v⁻¹. -/
   sourceCoordinate : Laurent
+  /-- True means multiplier -(v + v⁻¹); false means multiplier -1 in b_(c_2). -/
   isLaurent : Bool
   deriving Repr, Inhabited
 
