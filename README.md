@@ -1,8 +1,8 @@
-# Code and Erratum for *Exponentially large mu-coefficients*
+# Code and Erratum for *Webs and exponentially large mu-coefficients*
 
 This repository contains the Lean verification and W-graph computation programs accompanying the paper
 
-*Exponentially large mu-coefficients*
+*Webs and exponentially large mu-coefficients*
 
 by Tom Goertzen, Abel Lacabanne, Daniel Tubbenhauer and Pedro Vaz.
 
@@ -76,7 +76,7 @@ The suggested citation is:
 ```bibtex
 @misc{GoLaTuVa-mu-code,
   author = {Goertzen, Tom and Lacabanne, Abel and Tubbenhauer, Daniel and Vaz, Pedro},
-  title = {Code and more for the paper {Exponentially large mu-coefficients}},
+  title = {Code and more for the paper {Webs and exponentially large mu-coefficients}},
   year = {2026},
   url = {https://github.com/dtubbenhauer/mu}
 }
