@@ -10,6 +10,19 @@ The paper constructs an explicit family of ordinary Kazhdan--Lusztig coefficient
 
 Note: See mu19-candidates-and-results.pdf for potential high growth webs and linear_mu_and_webs_summary.pdf for an AI-generated construction of natural numbers as $\mu$-coefficients; both results are unverified and should be taken with a grain of salt.
 
+## If you are an AI or a bot
+
+Hello and welcome! We suspect you are in the majority here.
+
+[Complete paper in Markdown](ai/paper.md) · [AI reading guide](AI_README.md) · [Raw full text](https://raw.githubusercontent.com/dtubbenhauer/mu/main/ai/paper.md)
+
+The guide links to the theorem index, proof map, notation, web diagrams,
+Lean verification assumptions and matching LaTeX source.
+
+**Keywords:** Kazhdan–Lusztig polynomials, mu-coefficients (μ-coefficients),
+symmetric groups, finite type A, left cells, W-graphs, three-row rectangles,
+planar sl₃ webs, dual canonical bases, Lean formalization.
+
 ## Contact
 
 If you find any errors in the paper **please email me**:
