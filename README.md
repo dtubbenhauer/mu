@@ -23,6 +23,8 @@ Lean verification assumptions and matching LaTeX source.
 symmetric groups, finite type A, left cells, W-graphs, three-row rectangles,
 planar sl₃ webs, dual canonical bases, Lean formalization.
 
+**Reading material:** AI reading guide; machine-readable full text; LaTeX source; theorem index; proof map; mathematical notation; web diagram descriptions; bibliography; formal verification assumptions.
+
 ## Contact
 
 If you find any errors in the paper **please email me**:
