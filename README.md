@@ -8,7 +8,7 @@ by Tom Goertzen, Abel Lacabanne, Daniel Tubbenhauer and Pedro Vaz.
 
 The paper constructs an explicit family of ordinary Kazhdan--Lusztig coefficients `mu = 2^r` in `S_(12+18r)`, inside a single left cell with a three-row rectangular recording tableau. The proof uses a fixed 28-dimensional interface and induction.
 
-See mu19-candidates-and-results.pdf for a family of webs with potentially faster growth.
+Note: See mu19-candidates-and-results.pdf for potential high growth webs and linear_mu_and_webs_summary.pdf for an AI-generated construction of natural numbers as $\mu$-coefficients; both results are unverified and should be taken with a grain of salt.
 
 ## Contact
 
